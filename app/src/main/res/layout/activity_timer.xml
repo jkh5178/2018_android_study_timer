@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+tools:context=".Timer">
+<TableRow
+    android:layout_weight = "1"
+    android:gravity="center_vertical">
+    <NumberPicker
+        android:id="@+id/c1_numberPicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" />
+    <NumberPicker
+        android:id="@+id/c1_numberPicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"/>
+    <NumberPicker
+        android:id="@+id/c1_numberPicker3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" />
+
+</TableRow>
+
+<Button android:id="@+id/c1_btn1"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="시작"
+    android:visibility="visible"
+    android:layout_margin="50dp"/>
+
+<Button android:id="@+id/c1_btn2"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="일지중지"
+    android:visibility="gone"
+    android:layout_margin="50dp"/>
+<Button android:id="@+id/c1_btn3"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="리셋"
+    android:visibility="gone"
+    android:layout_margin="50dp"/>
+</TableLayout>
